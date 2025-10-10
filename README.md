@@ -94,10 +94,11 @@ PPRR/
 ## 🧑‍💻 Autore
 
 **Progetto:** PPRR  
-**Versione:** 1.0  
+**Versione:** 1.1  
 **Linguaggio:** HTML, CSS, JS  
 **Team del progetto:** Gelatti Gabriele (Project Manager), Grassi Francesco, Wang Cristiano
 
 ---
 
 > “PPRR semplifica la pianificazione: un piccolo Kanban, grande produttività.”
+
