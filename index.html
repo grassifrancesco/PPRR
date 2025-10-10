@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PPRR</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PPRR</h1>
+            <div class="controls">
+                <input type="text" id="search" placeholder="Cerca per titolo, descrizione o assegn..." aria-label="Cerca issue"/>
+                <button id="newIssueBtn">Nuova issue</button>
+            </div>
+        </header>
+
+        <div class="kanban-board" id="board" aria-live="polite">
+            <div class="column" id="backlog" data-status="backlog">
+                <h2>Backlog (<span class="count">1</span>)</h2>
+                <div class="tasks"></div>
+            </div>
+
+            <div class="column" id="inProgress" data-status="inProgress">
+                <h2>In Progress (<span class="count">1</span>)</h2>
+                <div class="tasks"></div>
+            </div>
+
+            <div class="column" id="review" data-status="review">
+                <h2>Review (<span class="count">1</span>)</h2>
+                <div class="tasks"></div>
+            </div>
+
+            <div class="column" id="done" data-status="done">
+                <h2>Done (<span class="count">0</span>)</h2>
+                <div class="tasks"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal / Form nuova issue -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close" aria-label="Chiudi">&times;</button>
+            <h3>Nuova Issue</h3>
+            <form id="issueForm">
+                <label>
+                    Titolo
+                    <input type="text" id="title" required />
+                </label>
+                <label>
+                    Descrizione
+                    <textarea id="desc" rows="3"></textarea>
+                </label>
+                <label>
+                    Priorità
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </label>
+                <label>
+                    Assegnato a
+                    <input type="text" id="assignee" />
+                </label>
+                <label>
+                    Colonna iniziale
+                    <select id="status">
+                        <option value="backlog">Backlog</option>
+                        <option value="inProgress">In Progress</option>
+                        <option value="review">Review</option>
+                        <option value="done">Done</option>
+                    </select>
+                </label>
+                <div class="form-actions">
+                    <button type="submit">Crea</button>
+                    <button type="button" id="cancelCreate">Annulla</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
