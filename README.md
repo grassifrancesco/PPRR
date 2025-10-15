@@ -36,16 +36,16 @@ PPRR/
 
 | ID | Descrizione | Priorità |
 |----|--------------|----------|
-| RF1 | L’utente deve poter creare una nuova issue tramite form. | Alta |
-| RF2 | Ogni issue deve contenere: titolo, descrizione, priorità, assegnatario e stato. | Alta |
-| RF3 | L’utente deve poter modificare o eliminare una issue esistente. | Alta |
-| RF4 | Le issue devono poter essere spostate tra le colonne tramite drag & drop o menu rapido. | Alta |
-| RF5 | L’app deve mostrare il conteggio delle issue per colonna. | Media |
-| RF6 | L’utente deve poter cercare issue tramite parole chiave. | Media |
-| RF7 | I dati devono persistere tra le sessioni grazie al localStorage. | Alta |
-| RF8 | L’interfaccia deve aggiornarsi dinamicamente senza ricaricare la pagina. | Alta |
-| RF9 | L’utente deve poter annullare la creazione o la modifica di una issue. | Media |
-| RF10 | Il sistema deve essere utilizzabile anche tramite tastiera. | Media |
+| 1 | L’utente deve poter creare una nuova issue tramite form. | Critica |
+| 2 | Ogni issue deve contenere: titolo, descrizione, priorità, assegnatario e stato. | Critica |
+| 3 | L’utente deve poter modificare o eliminare una issue esistente. | Critica |
+| 4 | I dati devono persistere tra le sessioni grazie al localStorage. | Critica |
+| 5 | Le issue devono poter essere spostate tra le colonne tramite drag & drop o menu rapido. | Alta |
+| 6 | L’app deve mostrare il conteggio delle issue per colonna. | Media |
+| 7 | L’utente deve poter cercare issue tramite parole chiave. | Media |
+| 8 | L’interfaccia deve aggiornarsi dinamicamente senza ricaricare la pagina. | Media |
+| 9 | L’utente deve poter annullare la creazione o la modifica di una issue. | Media |
+| 10 | Il sistema deve essere utilizzabile anche tramite tastiera. | Bassa |
 
 ---
 
@@ -101,4 +101,5 @@ PPRR/
 ---
 
 > “PPRR semplifica la pianificazione: un piccolo Kanban, grande produttività.”
+
 
